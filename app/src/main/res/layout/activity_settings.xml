@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constLayoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_min="@dimen/constraint_layout_top_min_height"
+            android:background="@color/purple_color"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayoutBottom"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5"
+            app:layout_constraintVertical_weight="1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMyProfileSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/settings_text_margin_start"
+                android:layout_marginTop="@dimen/settings_margin_top"
+                android:fontFamily="@font/patuaone_regular"
+                android:text="@string/settings"
+                android:textColor="@color/white"
+                android:textSize="@dimen/settings_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMyProfileLogOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/button_margin_end"
+                android:fontFamily="@font/patuaone_regular"
+                android:paddingLeft="@dimen/button_padding"
+                android:paddingRight="@dimen/button_padding"
+                android:text="@string/log_out"
+                android:textColor="@color/gray_color"
+                android:background="@drawable/logout_button_custom_background"
+                app:layout_constraintBottom_toBottomOf="@+id/tvMyProfileSettings"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvMyProfileSettings" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivMyProfileMainPhoto"
+                app:shapeAppearanceOverlay="@style/RoundImage"
+                android:layout_width="@dimen/image_view_width"
+                android:layout_height="@dimen/image_view_height"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.382"
+                app:srcCompat="@drawable/profile_photo" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMyProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/name_margin_top"
+                android:fontFamily="@font/patuaone_regular"
+                android:text="@string/name_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/name_text_size"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/ivMyProfileMainPhoto"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="@+id/ivMyProfileMainPhoto"
+                app:layout_constraintTop_toBottomOf="@+id/ivMyProfileMainPhoto" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMyProfileProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/profession_text_margin_top"
+                android:fontFamily="@font/patuaone_regular"
+                android:text="@string/profession_text"
+                android:textColor="@color/gray_color"
+                android:textSize="@dimen/profession_text_size"
+                app:layout_constraintEnd_toEndOf="@+id/tvMyProfileName"
+                app:layout_constraintStart_toStartOf="@+id/tvMyProfileName"
+                app:layout_constraintTop_toBottomOf="@+id/tvMyProfileName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMyProfileInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/information_text_margin_top"
+                android:fontFamily="@font/patuaone_regular"
+                android:text="@string/information_text"
+                android:textColor="@color/gray_color"
+                android:textSize="@dimen/information_text_size"
+                app:layout_constraintEnd_toEndOf="@+id/tvMyProfileProfession"
+                app:layout_constraintStart_toStartOf="@+id/tvMyProfileProfession"
+                app:layout_constraintTop_toBottomOf="@+id/tvMyProfileProfession" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutBottom"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_min="@dimen/constraint_layout_bottom_min_height"
+            android:background="@color/profile_bot_side"
+            app:layout_constraintVertical_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constLayoutTop"
+            app:layout_constraintVertical_bias="0.5">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMyProfileViewContact"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/button_my_contact_height"
+                android:layout_marginStart="@dimen/my_contacts_button_margin_left"
+                android:layout_marginEnd="@dimen/my_contacts_button_margin_right"
+                android:layout_marginBottom="@dimen/my_contacts_button_margin_bottom"
+                android:background="@drawable/my_contacts_button_style"
+                android:text="@string/my_contacts_button_text"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMyProfileEditProfile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/edit_profile_button_margin_bot"
+                android:background="@drawable/edit_button_custom_background"
+                android:text="@string/edit_profile_button_text"
+                android:textAllCaps="false"
+                android:textColor="@color/edit_button_custom_text_color"
+                android:textSize="@dimen/edit_profile_button_text_size"
+                app:layout_constraintBottom_toTopOf="@+id/btnMyProfileViewContact"
+                app:layout_constraintEnd_toEndOf="@+id/btnMyProfileViewContact"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/btnMyProfileViewContact" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMyProfileBottomMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/bottom_text_message_margin_bot"
+                android:fontFamily="@font/patuaone_regular"
+                android:text="@string/bottom_message_text"
+                android:textSize="@dimen/bottom_text_message_text_size"
+                app:layout_constraintBottom_toTopOf="@+id/btnMyProfileEditProfile"
+                app:layout_constraintEnd_toEndOf="@+id/btnMyProfileEditProfile"
+                app:layout_constraintStart_toStartOf="@+id/btnMyProfileEditProfile" />
+
+            <com.example.android_level_2.CustomButtonView
+                android:id="@+id/btnCustomGoogleButton"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginHorizontal="8dp"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                app:buttonText="G O O G L E"
+                app:buttonTextColor="#FFFFFF"
+                app:buttonTextSize="22sp"
+                app:buttonBackgroundColor="@color/purple_color"
+                app:buttonBorderLineColor="@color/orange_color"
+                app:buttonBorderLineWidth="2dp"
+                app:buttonCornerRadius="6dp"
+                app:buttonImage="@drawable/logo_svg_google_icon"
+                app:buttonImageHeight="38dp"
+                app:buttonDistanceToText="4dp"
+                app:buttonTextStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

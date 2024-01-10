@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple_color">#7571C5</color>
+    <color name="profile_bot_side">#494747</color>
+    <color name="orange_color">#5C2402</color>
+    <color name="gray_color">#E1D6D6</color>
+    <color name="text_color">#272626</color>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Old resources START     -->
+    <dimen name="settings_text_size">28sp</dimen>
+    <dimen name="button_padding">36dp</dimen>
+    <dimen name="name_text_size">26sp</dimen>
+    <dimen name="image_view_width">120dp</dimen>
+    <dimen name="image_view_height">120dp</dimen>
+    <dimen name="name_margin_top">16dp</dimen>
+    <dimen name="button_margin_end">16dp</dimen>
+
+    <dimen name="settings_text_margin_start">24dp</dimen>
+    <dimen name="settings_margin_top">24dp</dimen>
+    <dimen name="profession_text_margin_top">8dp</dimen>
+    <dimen name="profession_text_size">16sp</dimen>
+    <dimen name="information_text_margin_top">16dp</dimen>
+    <dimen name="information_text_size">20sp</dimen>
+
+    <dimen name="my_contacts_button_margin_bottom">16dp</dimen>
+    <dimen name="my_contacts_button_margin_right">8dp</dimen>
+    <dimen name="my_contacts_button_margin_left">8dp</dimen>
+    <dimen name="bottom_text_message_margin_bot">20dp</dimen>
+    <dimen name="bottom_text_message_text_size">18sp</dimen>
+
+    <dimen name="edit_profile_button_text_size">20sp</dimen>
+    <dimen name="edit_profile_button_margin_bot">8dp</dimen>
+
+    <dimen name="constraint_layout_top_min_height">330dp</dimen>
+    <dimen name="constraint_layout_bottom_min_height">330dp</dimen>
+
+    <!--    Old resources END     -->
+
+    <dimen name="toolbar_main_text_size">24sp</dimen>
+
+    <dimen name="button_my_contact_height">62dp</dimen>
+
+    <dimen name="tv_add_new_contact_text_margin_start">16dp</dimen>
+    <dimen name="tv_add_new_contact_text_padding">4dp</dimen>
+    <dimen name="tv_add_new_contact_text_size">16sp</dimen>
+
+    <dimen name="new_contact_container_height">56dp</dimen>
+    <dimen name="tv_toolbar_add_contact_text_size">18sp</dimen>
+
+    <dimen name="img_back_toolbar_add_contact_padding">10dp</dimen>
+    <dimen name="img_back_toolbar_contact_list_padding">10dp</dimen>
+
+    <dimen name="img_search_toolbar_contact_list">10dp</dimen>
+    <dimen name="cl_add_image_container_height">152dp</dimen>
+
+    <dimen name="img_avatar_add_contact_width">113dp</dimen>
+    <dimen name="img_avatar_add_contact_height">113dp</dimen>
+
+    <dimen name="img_add_new_image_add_contact_width">55dp</dimen>
+    <dimen name="img_add_new_image_add_contact_height">55dp</dimen>
+    <dimen name="img_add_new_image_add_contact_margin_start">24dp</dimen>
+
+    <dimen name="cl_input_fields_container_horizontal_margin">16dp</dimen>
+    <dimen name="cl_input_fields_container_margin_top">24dp</dimen>
+    <dimen name="lin_layout_career_container_margin_top">8dp</dimen>
+    <dimen name="lin_layout_email_container_margin_top">8dp</dimen>
+    <dimen name="lin_layout_phone_container_margin_top">8dp</dimen>
+    <dimen name="lin_layout_address_container_margin_top">8dp</dimen>
+    <dimen name="lin_layout_birthday_container_margin_top">8dp</dimen>
+    <dimen name="et_birthday_add_contact_margin_bottom">24dp</dimen>
+    <dimen name="btn_save_user_data_height">55dp</dimen>
+    <dimen name="btn_save_user_data_margin_bottom">66dp</dimen>
+    <dimen name="btn_save_user_data_horizontal_margin">16dp</dimen>
+    <dimen name="btn_save_user_data_text_size">18sp</dimen>
+
+
+</resources>
